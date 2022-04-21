@@ -38,7 +38,7 @@ header {
   list-style: none; }
 
 body {
-  background-color: #f6e7e7; }
+  background-color: #FFCCCC; }
 
 h1 {
   font-size: 3.5em; }
@@ -61,7 +61,7 @@ button {
   padding: 10px 20px;
   border-radius: 10px;
   border: 2px solid black;
-  background-color: #be4dee; }
+  background-color: #FFCCCC; }
 
 .container {
   max-width: 1400px;
