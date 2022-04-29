@@ -1,0 +1,40 @@
+@media (max-width: 850px) {
+
+    nav ul li{
+        display: inline-block;
+        margin: 5px;
+        }
+    }
+
+    .contenedor .sobrenosotros{
+        grid-area: sobrenosotros ;
+    }
+
+    .contenedor .contenido{
+        grid-area: contenido;
+    }
+
+    .contenedor .sidebar{
+        grid-area: sidebar;
+
+    }
+
+    .contenedor .widget-1{
+        grid-area: widget-1;
+    }
+
+    .contenedor .widget-2{
+        grid-area: widget-2;
+    }
+
+    .contenedor .footersn{
+        grid-area: footer;
+        text-align: center;
+    }
+    .contenedor {
+        grid-template-areas: "sobrenosotros sobrenosotros sobrenosotros"
+                            "contenido contenido contenido"
+                            "sidebar sidebar sidebar"
+                            "widget-1 widget-1 widget-2"
+                            "footer footer footer";
+    }

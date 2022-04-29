@@ -1,33 +1,72 @@
-header {
-  background: black;
-  width: 100%;
-  height: 120px;
-  display: flex; }
-  header .menu {
-    width: 900px;
-    margin: 0 auto; }
-    header .menu .logoPanati {
-      position: absolute;
-      border: 4px solid black;
-      border-radius: 1000px;
-      height: 120px;
-      width: 120px;
-      float: left;
-      padding: 8px; }
-    header .menu nav ul {
-      float: right; }
-      header .menu nav ul li {
-        margin-left: 75px;
-        padding: 25px 0px;
-        display: inline-block;
-        line-height: 80px; }
-        header .menu nav ul li a {
-          color: aliceblue;
-          font-size: 20px;
-          padding: 7px;
-          border-radius: 3px;
-          background: #444343;
-          transition: .5s; }
+h1 {
+  font-size: 3.5em; }
+
+h2 {
+  font-size: 2.7em; }
+
+h3 {
+  font-size: 2em; }
+
+p {
+  font-size: 1.25em; }
+
+li {
+  font-size: 1.25em; }
+
+h1 {
+  font-size: 3.5em; }
+
+h2 {
+  font-size: 2.7em; }
+
+h3 {
+  font-size: 2em; }
+
+p {
+  font-size: 1.25em; }
+
+li {
+  font-size: 1.25em; }
+
+.eventos {
+  text-align: center; }
+
+.carousel-caption h2 {
+  border-radius: 20px;
+  font-size: 200px;
+  Text-shadow: 5px 5px 5px Black; }
+
+.carousel-caption p {
+  border-radius: 20px;
+  font-size: 50px;
+  Text-shadow: 5px 5px 5px Black; }
+
+@media (max-width: 850px) {
+  nav ul li {
+    display: inline-block;
+    margin: 5px; } }
+
+.contenedor .sobrenosotros {
+  grid-area: sobrenosotros; }
+
+.contenedor .contenido {
+  grid-area: contenido; }
+
+.contenedor .sidebar {
+  grid-area: sidebar; }
+
+.contenedor .widget-1 {
+  grid-area: widget-1; }
+
+.contenedor .widget-2 {
+  grid-area: widget-2; }
+
+.contenedor .footersn {
+  grid-area: footer;
+  text-align: center; }
+
+.contenedor {
+  grid-template-areas: "sobrenosotros sobrenosotros sobrenosotros" "contenido contenido contenido" "sidebar sidebar sidebar" "widget-1 widget-1 widget-2" "footer footer footer"; }
 
 * {
   margin: 0px;
@@ -73,17 +112,16 @@ button {
 #hero {
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
   flex-direction: column;
   height: 90vh;
-  color: white;
   background-image: url("../IMG/WhatsApp Image 2022-03-23 at 22.29.14.jpeg");
   background-repeat: no-repeat;
   background-size: cover; }
 
-#hero h1 {
-  color: white; }
+#hero .logoPanati {
+  height: 1000px;
+  width: 1000px;
+  padding: 8px; }
 
 #compra-ya .container {
   text-align: center;
@@ -91,7 +129,6 @@ button {
 
 #nuestros-desayunos {
   background-color: #252424;
-  color: black;
   text-align: center; }
 
 #nuestros-desayunos .container {
@@ -149,7 +186,6 @@ button {
   text-align: center;
   align-items: center;
   background-color: #1e1e1e;
-  color: white;
   height: 30vh; }
 
 #final h2 {

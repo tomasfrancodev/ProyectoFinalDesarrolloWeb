@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servicio de catering para eventos sociales en CABA">
+    <meta name="keywords" content="CATERING Cumpleaños Boda Fiestas EVENTOS">
     
     <!--link tipografia-->
 
@@ -24,74 +26,78 @@
 
 </head>
 <body>
-    <header>
-        
-        
-        <div class="menu">
-
-            <img class="logoPanati" src="../img/Logo Panati Dulce Oficial.jpeg" alt="logoPanati">
-
-    <nav>
-        <ul>
-            <li>
-
-                <a href="../index.html" class="text-decoration-none">
-                    ir a home
-            </a>
-            </li> 
-            <li>
-
-                <a href="../pages/productos.html" class="text-decoration-none">
-                    Productos
-                </a> 
-            </li>
-            <li>
-
-                 <a href="../pages/sobrenosotros.html" class="text-decoration-none">
-                    Sobre Nosotros
-                </a>
-
-            </li>
-            <li>
-                <a href="../pages/comocomprar.html" class="text-decoration-none">
-                    Como Comprar
-                </a>
-            </li>
-        </ul>
-    </nav>
-    </div>
+    <header>   
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-image:url(/img/fondo.jpg)">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="sobrenosotros.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="comocomprar.html">Como comprar</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </nav>
+      </div>
     </header>
 
     <main>
         <div>
             <h1 class="eventos">Eventos</h1>
         </div>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../IMG/birthday-2338813_960_720.jpg" class="d-block w-100" alt="Cumpleaños">
-              </div>
-              <div class="carousel-item">
-                <img src="../IMG/play-5134828_960_720.jpg" class="d-block w-100" alt="Infantiles">
-              </div>
-              <div class="carousel-item">
-                <img src="../IMG/wedding-4660419_960_720.jpg" class="d-block w-100" alt="Bodas">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../IMG/birthday-2338813_960_720.jpg" class="d-block w-100" alt="Cumpleaños">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Cumpleaños</h2>
+                <p>Festeja con Nosotros tu cumpleaños. Nos encargamos de que la pases de la mejor manera con nuestros sabores</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../IMG/wedding-4660419_960_720.jpg" class="d-block w-100" alt="Boda">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Bodas</h2>
+                <p>Nos encargamos del catering de la fiesta de tu vida</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../IMG/play-5134828_960_720.jpg" class="d-block w-100" alt="fiestas infantiles">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Fiestas infantiles</h2>
+                <p>Combinamos la diversion y el sabor para que tus hijos pasen un momento de felicidad</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
     </main>
 
     <footer>

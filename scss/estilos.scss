@@ -1,5 +1,8 @@
 @import "utilities/variables";
-@import "layout/nav";
+@import "utilities/mixings";
+@import "utilities/maps";
+@import "layout/eventos";
+@import "layout/medias";
 
 *{
     margin: 0px;
@@ -23,6 +26,8 @@ h3{font-size: 2em;}
 p{font-size: 1.25em;}
 li{font-size: 1.25em;}
 
+
+
 button{
     font-size: 1.5em;
     font-weight: bold;
@@ -37,24 +42,24 @@ button{
     margin: auto;
 }
 
-.color-acento{color: blueviolet;}
+.color-acento{color:map-get($map:$colores, $key:color1 )}
 
 #hero{
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
     flex-direction: column;
     height: 90vh;
-    color: white;
     background-image:url("../IMG/WhatsApp\ Image\ 2022-03-23\ at\ 22.29.14.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#hero h1{
-    color: white;
+#hero .logoPanati{
+    height: 1000px;
+    width: 1000px;
+    padding: 8px;
 }
+
 
 
 #compra-ya .container{
@@ -66,7 +71,6 @@ button{
 
 #nuestros-desayunos{
     background-color: rgb(37, 36, 36);
-    color: black;
     text-align: center;
 }
 
@@ -87,24 +91,21 @@ button{
 #nuestros-desayunos .carta1{
     background-position: center center;
     background-size: cover;
-    padding: 50px;
-    margin: 20px;
+    @include tamañocartas;
     border-radius: 15px;
 }
 
 #nuestros-desayunos .carta2{
     background-position: center center;
     background-size: cover;
-    padding: 50px;
-    margin: 20px;
+    @include tamañocartas;
     border-radius: 15px;
 }
 
 #nuestros-desayunos .carta3{
     background-position: center center;
     background-size: cover;
-    padding: 50px;
-    margin: 20px;
+    @include tamañocartas;
     border-radius: 15px;
 }
 
@@ -136,7 +137,7 @@ button{
     text-align: center;
     align-items: center;
     background-color: rgb(30, 30, 30);
-    color: white;
+    
     height: 30vh;
 }
 
@@ -151,7 +152,7 @@ button{
 
 footer p{
     margin: 0px;
-    color: darkgray;
+    color:map-get($map:$colores, $key:color3);
     display: flex;
     justify-content: center;
 }
